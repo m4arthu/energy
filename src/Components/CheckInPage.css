@@ -1,0 +1,170 @@
+/* Configurações básicas para toda a página */
+.checkin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000000, #ffff00); /* Degradê preto para amarelo */
+    position: relative; /* Para posicionar a chuva de moedas corretamente */
+  }
+  
+  .checkin-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #000; /* Cor padrão preta para todos os textos no card */
+  }
+  
+  /* Estilização do título "Diário de check-in" */
+  .checkin-card h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilização para "Saldo da conta: R$" e "Renda diária acumulada: R$" */
+  .checkin-card p {
+    color: #000; /* Cor preta para os parágrafos */
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .checkin-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #000000, #ffff00);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .checkin-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Regras */
+  .rules-section {
+    margin-top: 20px;
+    color: #000; /* Garante que as regras também fiquem pretas */
+  }
+  
+  /* Animação de chuva de moedas */
+  .coin-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interações no conteúdo abaixo */
+    overflow: hidden;
+  }
+  
+  /* Várias moedas caindo */
+  .coin-rain::before,
+  .coin-rain::after,
+  .coin-rain .coin1,
+  .coin-rain .coin2,
+  .coin-rain .coin3,
+  .coin-rain .coin4,
+  .coin-rain .coin5,
+  .coin-rain .coin6,
+  .coin-rain .coin7,
+  .coin-rain .coin8,
+  .coin-rain .coin9 {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, #FFD700, #FFA500); /* Cor da moeda (dourado) */
+    border-radius: 50%;
+    animation: coinFall 4s linear infinite;
+    z-index: 0;
+  }
+  
+  /* Distribuindo as moedas em posições e tempos diferentes */
+  .coin-rain::before {
+    left: 5%;
+    animation-delay: 0s;
+  }
+  
+  .coin-rain::after {
+    left: 20%;
+    animation-delay: 0.5s;
+  }
+  
+  .coin-rain .coin1 {
+    left: 35%;
+    animation-delay: 1s;
+  }
+  
+  .coin-rain .coin2 {
+    left: 50%;
+    animation-delay: 0.2s;
+  }
+  
+  .coin-rain .coin3 {
+    left: 65%;
+    animation-delay: 1.5s;
+  }
+  
+  .coin-rain .coin4 {
+    left: 80%;
+    animation-delay: 0.8s;
+  }
+  
+  .coin-rain .coin5 {
+    left: 90%;
+    animation-delay: 1.2s;
+  }
+  
+  .coin-rain .coin6 {
+    left: 15%;
+    animation-delay: 1.8s;
+  }
+  
+  .coin-rain .coin7 {
+    left: 70%;
+    animation-delay: 2.2s;
+  }
+  
+  .coin-rain .coin8 {
+    left: 25%;
+    animation-delay: 2.5s;
+  }
+  
+  .coin-rain .coin9 {
+    left: 45%;
+    animation-delay: 1.7s;
+  }
+  
+  /* Animação de queda de moeda */
+  @keyframes coinFall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(800px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  

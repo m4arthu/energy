@@ -1,0 +1,192 @@
+/* Reset básico para garantir que o fundo ocupe a tela toda */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Posicionando os símbolos nos cantos */
+.corner-symbol {
+  position: absolute;
+  width: 180px; /* Tamanho do símbolo */
+  height: 180px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Posições específicas para cada símbolo */
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.login-card {
+  background: rgba(0, 0, 0, 0.85); /* Fundo branco com leve transparência */
+  padding: 40px;
+  border-radius: 10px;
+  /* Sombra suave em amarelo claro ao redor do login-card */
+  box-shadow: 0 0 30px 15px rgba(42, 39, 9, 0.6), 0 0 60px 30px rgba(255, 250, 205, 0.4);
+  text-align: center;
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  animation: spin 3s linear infinite; /* Animação de rotação */
+  filter: drop-shadow(0 0 10px rgba(255, 223, 0, 0.6)) drop-shadow(0 0 20px rgba(255, 223, 0, 0.8)); /* Brilho em torno da moeda */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Começa sem rotação */
+  }
+  to {
+    transform: rotate(360deg); /* Completa uma rotação */
+  }
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff; /* Letras brancas */
+}
+
+/* Input fields */
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #000000; /* Fundo branco */
+  color: #fff; /* Texto branco */
+  font-size: 16px;
+}
+
+/* Placeholder em branco */
+.input-group input::placeholder {
+  color: #fff; /* Placeholder branco */
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #fff; /* Cor branca */
+}
+
+.remember-me input {
+  margin-right: 10px;
+  
+}
+
+/* Estilizando a caixa de seleção (checkbox) */
+.remember-me input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remember-me input[type="checkbox"]:checked {
+  background-color: #ffffff;
+}
+
+.remember-me input[type="checkbox"]:checked::after {
+  content: '✓'; /* Ícone de checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #000; /* Cor preta para o checkmark */
+}
+
+.link-container {
+  margin-bottom: 20px;
+}
+
+.create-account {
+  color: #fff; /* Letras brancas */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.create-account:hover {
+  color: #fff; /* Mantém a cor branca ao passar o cursor */
+}
+
+/* Estilo do botão de login */
+.login-button {
+  display: flex;
+  height: 60px;
+  padding: 5px 100px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--BORDA, 10px);
+  align-self: stretch;
+  border-radius: var(--BORDA, 10px);
+  border: 2px solid #FFD000;
+  background: rgba(255, 208, 0, 0.30);
+  color: #fff; /* Letras brancas no botão */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: rgba(255, 208, 0, 0.50);
+}

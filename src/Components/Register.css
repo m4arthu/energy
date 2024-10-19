@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FF0, #FFFFFF); /* Fundo com degradê */
+  width: 100%;
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 15px rgba(42, 39, 9, 0.6), 0 0 60px 30px rgba(255, 250, 205, 0.4);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilo da seta de voltar */
+.back-arrow {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: black; /* Cor preta */
+  font-weight: bold;
+  text-decoration: none; /* Remove sublinhado se for um link */
+  transition: color 0.3s ease;
+}
+
+.back-arrow:hover {
+  color: #555; /* Cor mais clara ao passar o mouse */
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #FF0, #FFFFFF);
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, #FFFFFF, #FF0);
+}
+
+p {
+  color: red;
+  margin-top: 10px;
+}
