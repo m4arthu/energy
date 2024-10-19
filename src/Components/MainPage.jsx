@@ -6,9 +6,9 @@ import copyIcon from '../assets/copy-icon.png';  // Ícone de copiar
 import solar1 from '../assets/solar1.png';  // Imagem do item 1
 import solar2 from '../assets/solar2.png';  // Imagem do item 2
 import solar3 from '../assets/solar3.png';  // Imagem do item 3
-import midaK1 from '../assets/midaK1.png';  // Nova imagem Mida-K 1
-import midaK2 from '../assets/midaK2.png';  // Nova imagem Mida-K 2
-import midaK3 from '../assets/midaK3.png';  // Nova imagem Mida-K 3
+import midaK1 from '../assets/midak1.png';  // Nova imagem Mida-K 1
+import midaK2 from '../assets/midak2.png';  // Nova imagem Mida-K 2
+import midaK3 from '../assets/midak3.png';  // Nova imagem Mida-K 3
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faWallet, faMoneyBillAlt, faLifeRing, faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 
