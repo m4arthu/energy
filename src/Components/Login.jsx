@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './login.css'; // Usando o CSS do login
+import './Login.css'; // Usando o CSS do login
 import moedaIcon from '../assets/moeda.png'; // Importando a logo moeda.png
 import backgroundImage from '../assets/background.png'; // Importando a imagem de fundo
 import symbol1 from '../assets/symbol1.png'; // Importando os símbolos

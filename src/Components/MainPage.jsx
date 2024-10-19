@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './mainPage.css';
+import './MainPage.css';
 import iconUser from '../assets/user-icon.png';
 import copyIcon from '../assets/copy-icon.png';  // Ícone de copiar
 import solar1 from '../assets/solar1.png';  // Imagem do item 1

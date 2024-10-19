@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import './login.css'; // Usando o mesmo CSS
+import './Login.css'; // Usando o mesmo CSS
 import cartaIcon from '../assets/carta.png'; // Importando o ícone da carta
 import backgroundImage from '../assets/background.png'; // Importando a imagem de fundo
 import symbol1 from '../assets/symbol1.png'; // Importando os símbolos
